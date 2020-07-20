@@ -41,13 +41,13 @@ public class MainActivity extends AppCompatActivity implements MainView, View.On
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnCounter1:
-                mPresenter.buttonClick(0);
+                mPresenter.buttonClick(Presenter.NumBt.BT1.btId);
                 break;
             case R.id.btnCounter2:
-                mPresenter.buttonClick(1);
+                mPresenter.buttonClick(Presenter.NumBt.BT2.btId);
                 break;
             case R.id.btnCounter3:
-                mPresenter.buttonClick(2);
+                mPresenter.buttonClick(Presenter.NumBt.BT3.btId);
                 break;
         }
     }
